@@ -1,0 +1,7 @@
+convoy-plugin:
+  image: sundeer/rancher-convoy
+  volumes:
+    - /etc/docker:/etc/docker
+    - /var/lib/docker:/var/lib/docker
+    - /usr/bin:/usr/bin
+    - /var/run:/var/run
