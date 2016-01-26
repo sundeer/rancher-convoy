@@ -12,6 +12,8 @@ if [ ! -d /var/run/convoy ]; then
     mkdir -p /var/run/convoy
 fi
 
+touch /etc/docker/plugins/convoy.spec
+
 if [ "$(cat /tmp/convoy.spec)" != "$(cat /etc/docker/plugins/convoy.spec)" ]; then
     mv -f /tmp/convoy.spec /etc/docker/plugins/convoy.spec
 else
